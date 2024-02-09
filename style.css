@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    background-color:rgb(250, 232, 255);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section{
+    background-color: white;
+    /* height: 30%; */
+    width: 40%;
+    display:grid;
+   justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 3px 0px rgb(78, 78, 78);
+margin-bottom: 10rem;
+border-radius: 1rem;
+}
+.per{
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    grid-template-rows:7rem;
+font-family: sans-serif;
+    /* gap: 1rem; */
+   align-items:center;   
+   /* justify-content: space-between;   */
+   cursor: pointer;
+padding: 0rem 2rem;
+border-radius: 1rem;
+box-shadow: 0px 0px 3px 0px rgb(78, 78, 78);
+gap: 10px;
+}
+.pic{
+    height:5rem;
+    width: 5rem;
+    border-radius: 10rem;
+    object-fit:cover;
+}
+#clear{
+    /* padding: 3rem 3rem; */
+    /* background-color: rgb(214, 160, 229); */
+    border-radius:10px;
+    border: none;
+    font-size: 2rem;
+    /* box-shadow: 0px 0px 3px 0px rgb(78, 78, 78); */
+    --b: 0.7em;   /* the thickness of the line */
+    --c: #1095c1; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+    /* margin-top: 2rem; */
+}
+.heading{
+    color: aqua;
+}
+#back{
+    border-radius:10px;
+    border: none;
+    font-size: 2rem;
+    /* box-shadow: 0px 0px 3px 0px rgb(78, 78, 78); */
+    --b: 0.7em;   /* the thickness of the line */
+    --c: #1095c1; /* the color */
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+    /* margin-top: 2rem; */
+
+}
+#para{
+    display:block;
+    font-family: sans-serif ;
+    font-weight: 400;
+}
+
+#hb{
+    padding-left: 2rem;
+  
+        text-transform: uppercase;
+       background-image: linear-gradient(
+         -225deg,
+         #231557 0%,
+         #44107a 29%,
+         #ff1361 67%,
+         #fff800 100%
+       );
+       background-size: auto auto;
+       background-clip: border-box;
+       background-size: 200% auto;
+       color: #fff;
+       background-clip: text;
+       text-fill-color: transparent;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       animation: textclip 2s linear infinite;
+       display: inline-block;
+           font-size: 2rem;
+    
+     
+     @keyframes textclip {
+       to {
+         background-position: 200% center;
+       }
+     }
+    
+}
+.per:hover{
+    background-color: rgb(241, 238, 238);
+box-shadow: 0px 0px 10px 0px rgb(78, 78, 78);
+    scale: 1.1;
+    transition: 0.3s;
+ 
+}
+#detail{
+    width: 25rem;
+    display:none;
+}
+#detail:hover{
+    display: block;
+    width: 25rem;
+
+}
+#clear:hover{
+
+--_p: 100%;
+--_s: .3s;
+}
+
+#back:hover{
+    --_p: 100%;
+--_s: .3s;
+}
